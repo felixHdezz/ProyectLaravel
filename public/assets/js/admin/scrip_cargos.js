@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	$('#btn_guard').click(function(){
+		$.ajax({
+			url:'admin/carg/store',
+			type:'POST',
+			error:function(){
+				alert('Error');
+			}
+		});
+	});
+});
